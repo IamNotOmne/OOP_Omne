@@ -1,8 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-      Person var = new Person("Omne"); // ang Omne nga value  didtu na siya ma assign sa var no need na angg setname 
+      Movie mov = new Movie();
+      mov.setName("Harry Potter");
+      System.out.println(mov.getName());
+      mov.character();
+      mov.age();
+      mov.lines();
       
-      System.out.println(var.getName()); 
+      
     }
 
 }     
