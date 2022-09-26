@@ -1,25 +1,20 @@
+public class Movie implements LineInterface {
+    private String name;
 
+    public Movie(String name){
+      this.name = name;
+    }
 
-public class Movie implements Artists {
-    String name;
-     public void character(){
-        System.out.print("Real Name: ");
-        System.out.println("Daniel Radcliffe");
-     }
-    public void age(){
-        System.out.print("Age: ");
-        System.out.println("33 years old");
+    public String getName(){
+      return name;
     }
-   
-  public void lines(){
-    System.out.println("Famous Line: ");
-    System.out.println("I solemnly swear I am up to no good. ");
-  }
-    public String getName() {
-        return name;
+
+    public void setName (String name){
+      this.name = name;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void line(){
+      System.out.println("I'm sorry, professor. I must not tell lies");
     }
-    
 }
+
+

@@ -1,11 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-      Movie mov = new Movie();
-      mov.setName("Harry Potter");
-      System.out.println(mov.getName());
-      mov.character();
-      mov.age();
-      mov.lines();
+      Movie names = new Movie("\"Harry Potter\"");
+      Artists info = new Artists("Daniel Radcliffe", 32);
+
+      System.out.println("The movie " + names.getName());
+      System.out.println("The main character's name is " + info.getName() + " and his age is " + info.getAge() + ".");
+   
+      
       
       
     }
